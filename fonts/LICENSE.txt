@@ -1,0 +1,15 @@
+Fonts in this directory are self-hosted so the site makes no external requests.
+
+  baloo2-latin.woff2 / baloo2-latin-ext.woff2
+    Baloo 2 — Copyright (c) Ek Type
+    https://fonts.google.com/specimen/Baloo+2
+
+  nunito-latin.woff2 / nunito-latin-ext.woff2
+    Nunito — Copyright (c) The Nunito Project Authors
+    https://fonts.google.com/specimen/Nunito
+
+Both are licensed under the SIL Open Font License, Version 1.1:
+https://scripts.sil.org/OFL
+
+Both files are variable fonts covering the full weight axis, so one file per
+subset serves every weight the stylesheet asks for.

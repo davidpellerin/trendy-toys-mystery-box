@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Trendy Toys Mystery Box | Fidget &amp; Sensory Blind Box, Shipped to You</title>
+<meta name="description" content="A fidget blind box subscription, hand-packed by Trendy Toys. Every box is a surprise mix of fidget and sensory toys. Ships to the US and Canada. 3-month minimum, better pricing the longer you commit.">
+<link rel="canonical" href="https://www.trendytoys.ca/">
+
+<!-- Open Graph / Twitter. TODO: create og-image.jpg (1200x630) and drop it in /img. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Trendy Toys">
+<meta property="og:title" content="Trendy Toys Mystery Box | Fidget &amp; Sensory Blind Box">
+<meta property="og:description" content="A fidget blind box subscription, hand-packed by Trendy Toys. Every box is a surprise mix of fidget and sensory toys. Ships to the US and Canada. 3-month minimum, better pricing the longer you commit.">
+<meta property="og:url" content="https://www.trendytoys.ca/">
+<meta property="og:image" content="https://www.trendytoys.ca/img/og-image.jpg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="theme-color" content="#e0176e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='10' fill='%23e0176e'/%3E%3Cpath d='M16 5 Q17.6 14.4 27 16 Q17.6 17.6 16 27 Q14.4 17.6 5 16 Q14.4 14.4 16 5 Z' fill='%23ffd75e'/%3E%3C/svg%3E">
+
+<!-- The two display faces are self-hosted, so the page still makes no external
+     requests. Preloading them stops headings reflowing on first paint. -->
+<link rel="preload" href="fonts/baloo2-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.classList.remove('no-js');</script>
+
+<!-- TODO before launch: confirm every field below matches your real business details. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Trendy Toys",
+  "url": "https://www.trendytoys.ca/",
+  "email": "hello@trendytoys.ca",
+  "address": { "@type": "PostalAddress", "addressCountry": "CA" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Trendy Toys Mystery Box",
+  "description": "A recurring mystery box of fidget and sensory toys, hand-packed by Trendy Toys. 3-month minimum commitment.",
+  "brand": { "@type": "Brand", "name": "Trendy Toys" },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "39.00",
+    "availability": "https://schema.org/PreOrder",
+    "url": "https://www.trendytoys.ca/#pricing"
+  }
+}
+</script>
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- =====================================================================
+     Toy illustrations — an inline SVG sprite.
+
+     Everything visual on the page is drawn here once and referenced by id with
+     a `use` element, so the same artwork can appear in the carousel,
+     the category grid and the hero without repeating a single path.
+
+     House style, if you add more:
+       * viewBox 0 0 120 120, artwork roughly inside a 100x100 safe area
+       * outlines are #2b1b47 (--c-ink) at stroke-width 4, 2.5 for detail
+       * flat fills from the brand palette, one white highlight for shine
+       * no gradients — they muddy at small sizes and bloat the file
+
+     These are illustrations, not photographs. When real product photos
+     exist, swap the `.toy` div for an <img> carrying the same classes.
+     ===================================================================== -->
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+
+    <!-- Brand mark: bubblegum tile with a sparkle. -->
+    <symbol id="mark" viewBox="0 0 40 40">
+      <rect x="2.5" y="2.5" width="35" height="35" rx="12" fill="#ff3d8b" stroke="#2b1b47" stroke-width="3"/>
+      <path d="M20 9 Q22 18 31 20 Q22 22 20 31 Q18 22 9 20 Q18 18 20 9 Z"
+            fill="#ffd75e" stroke="#2b1b47" stroke-width="2.2" stroke-linejoin="round"/>
+    </symbol>
+
+    <!-- Pop-it: silicone push-pop pad, 3x3 bubbles. -->
+    <symbol id="toy-popit" viewBox="0 0 120 120">
+      <rect x="12" y="12" width="96" height="96" rx="26" fill="#ff3d8b" stroke="#2b1b47" stroke-width="4"/>
+      <rect x="21" y="21" width="78" height="78" rx="19" fill="#ff6ba6"/>
+      <g stroke="#2b1b47" stroke-width="3">
+        <circle cx="38" cy="38" r="12" fill="#ffd75e"/>
+        <circle cx="60" cy="38" r="12" fill="#35bdf5"/>
+        <circle cx="82" cy="38" r="12" fill="#96dc2a"/>
+        <circle cx="38" cy="60" r="12" fill="#35bdf5"/>
+        <circle cx="60" cy="60" r="12" fill="#96dc2a"/>
+        <circle cx="82" cy="60" r="12" fill="#ffd75e"/>
+        <circle cx="38" cy="82" r="12" fill="#96dc2a"/>
+        <circle cx="60" cy="82" r="12" fill="#ffd75e"/>
+        <circle cx="82" cy="82" r="12" fill="#35bdf5"/>
+      </g>
+      <g fill="#fff" opacity=".65">
+        <circle cx="34" cy="34" r="3"/><circle cx="56" cy="34" r="3"/><circle cx="78" cy="34" r="3"/>
+        <circle cx="34" cy="56" r="3"/><circle cx="56" cy="56" r="3"/><circle cx="78" cy="56" r="3"/>
+        <circle cx="34" cy="78" r="3"/><circle cx="56" cy="78" r="3"/><circle cx="78" cy="78" r="3"/>
+      </g>
+    </symbol>
+
+    <!-- Spinner: three lobes on a hub. Hub is drawn last so it hides the
+         lobe outlines where they meet it. -->
+    <symbol id="toy-spinner" viewBox="0 0 120 120">
+      <g stroke="#2b1b47" stroke-width="4">
+        <circle cx="60" cy="32" r="20" fill="#ff3d8b"/>
+        <circle cx="35.8" cy="74" r="20" fill="#35bdf5"/>
+        <circle cx="84.2" cy="74" r="20" fill="#96dc2a"/>
+        <circle cx="60" cy="60" r="19" fill="#ffd75e"/>
+        <circle cx="60" cy="60" r="10" fill="#ffffff"/>
+      </g>
+      <circle cx="60" cy="60" r="4.5" fill="#2b1b47"/>
+      <g fill="#fff" opacity=".55">
+        <circle cx="53" cy="25" r="4.5"/><circle cx="29" cy="67" r="4.5"/><circle cx="77" cy="67" r="4.5"/>
+      </g>
+    </symbol>
+
+    <!-- Infinity cube: isometric block, seams hint at the folding sub-cubes. -->
+    <symbol id="toy-cube" viewBox="0 0 120 120">
+      <g stroke="#2b1b47" stroke-width="4" stroke-linejoin="round">
+        <path d="M60 18 L94 37 L60 56 L26 37 Z" fill="#c4a9ff"/>
+        <path d="M26 37 L60 56 L60 94 L26 75 Z" fill="#7c3aed"/>
+        <path d="M94 37 L60 56 L60 94 L94 75 Z" fill="#5b21b6"/>
+      </g>
+      <g fill="none" stroke="#2b1b47" stroke-width="2.5" stroke-linecap="round" opacity=".5">
+        <path d="M43 27.5 L77 46.5"/><path d="M77 27.5 L43 46.5"/>
+        <path d="M43 46.5 L43 84.5"/><path d="M26 56 L60 75"/>
+        <path d="M77 46.5 L77 84.5"/><path d="M94 56 L60 75"/>
+      </g>
+    </symbol>
+
+    <!-- Squishy: slow-rise mochi character. -->
+    <symbol id="toy-squishy" viewBox="0 0 120 120">
+      <path d="M60 20 C88 20 104 40 104 62 C104 86 86 100 60 100 C34 100 16 86 16 62 C16 40 32 20 60 20 Z"
+            fill="#ffb3d1" stroke="#2b1b47" stroke-width="4"/>
+      <ellipse cx="40" cy="41" rx="13" ry="8" fill="#fff" opacity=".6" transform="rotate(-28 40 41)"/>
+      <ellipse cx="31" cy="73" rx="7.5" ry="4.5" fill="#ff6ba6"/>
+      <ellipse cx="89" cy="73" rx="7.5" ry="4.5" fill="#ff6ba6"/>
+      <circle cx="45" cy="62" r="5.5" fill="#2b1b47"/>
+      <circle cx="75" cy="62" r="5.5" fill="#2b1b47"/>
+      <circle cx="46.8" cy="59.8" r="1.9" fill="#fff"/>
+      <circle cx="76.8" cy="59.8" r="1.9" fill="#fff"/>
+      <path d="M51 76 Q60 85 69 76" fill="none" stroke="#2b1b47" stroke-width="4" stroke-linecap="round"/>
+    </symbol>
+
+    <!-- Stretchy string: one wavy path stroked three times — outline, colour,
+         then a thin offset highlight for the rubbery shine. -->
+    <symbol id="toy-stretchy" viewBox="0 0 120 120">
+      <g fill="none" stroke-linecap="round">
+        <path d="M14 84 C 28 40 44 98 58 58 C 70 24 90 90 106 44" stroke="#2b1b47" stroke-width="21"/>
+        <path d="M14 84 C 28 40 44 98 58 58 C 70 24 90 90 106 44" stroke="#f4761b" stroke-width="14"/>
+        <path d="M14 80 C 28 38 44 94 58 54 C 70 22 90 86 106 41" stroke="#fff" stroke-width="3.5" opacity=".5"/>
+      </g>
+    </symbol>
+
+    <!-- Pop tube: same trick, plus a dashed overstroke for the concertina ribs. -->
+    <symbol id="toy-poptube" viewBox="0 0 120 120">
+      <g fill="none">
+        <path d="M28 100 L28 56 A32 32 0 0 1 92 56 L92 100" stroke="#2b1b47" stroke-width="26" stroke-linecap="round"/>
+        <path d="M28 100 L28 56 A32 32 0 0 1 92 56 L92 100" stroke="#35bdf5" stroke-width="19" stroke-linecap="round"/>
+        <path d="M28 100 L28 56 A32 32 0 0 1 92 56 L92 100" stroke="#2b1b47" stroke-width="19"
+              stroke-dasharray="2.5 9" opacity=".45"/>
+        <path d="M22 100 L22 56 A38 38 0 0 1 34 28" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".4"/>
+      </g>
+    </symbol>
+
+    <!-- Slime jar. The jar is filled, then the slime, then the jar outline is
+         re-stroked on top so the slime can run right up to the glass. -->
+    <symbol id="toy-slime" viewBox="0 0 120 120">
+      <rect x="26" y="44" width="68" height="60" rx="13" fill="#eaf7ff"/>
+      <path d="M30 76 C38 67 45 85 53 76 C61 67 68 85 76 76 C82 69 87 81 90 77 L90 97 Q90 100 87 100 L33 100 Q30 100 30 97 Z"
+            fill="#96dc2a"/>
+      <g fill="#fff" opacity=".7">
+        <circle cx="44" cy="88" r="2.5"/><circle cx="64" cy="92" r="2"/><circle cx="78" cy="86" r="2.5"/>
+      </g>
+      <rect x="26" y="44" width="68" height="60" rx="13" fill="none" stroke="#2b1b47" stroke-width="4"/>
+      <path d="M34 52 L34 92" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".55"/>
+      <rect x="19" y="26" width="82" height="21" rx="9" fill="#ffc32b" stroke="#2b1b47" stroke-width="4"/>
+      <path d="M28 33 L92 33" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".45"/>
+    </symbol>
+
+    <!-- Sticker sheet with four die-cut shapes. -->
+    <symbol id="toy-stickers" viewBox="0 0 120 120">
+      <rect x="20" y="14" width="80" height="92" rx="11" fill="#ffffff" stroke="#2b1b47" stroke-width="4"/>
+      <rect x="27" y="21" width="66" height="78" rx="7" fill="none" stroke="#2b1b47"
+            stroke-width="2" stroke-dasharray="5 5" opacity=".35"/>
+      <path d="M44 29 L48.6 38.3 L58.9 39.8 L51.5 47.1 L53.2 57.3 L44 52.5 L34.8 57.3 L36.5 47.1 L29.1 39.8 L39.4 38.3 Z"
+            fill="#ffc32b" stroke="#2b1b47" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M78 54 C66 46 64 38 69 34.5 C73 32 78 34.5 78 38.5 C78 34.5 83 32 87 34.5 C92 38 90 46 78 54 Z"
+            fill="#ff3d8b" stroke="#2b1b47" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M48 64 L36 82 L44 82 L41 94 L54 75 L46 75 Z"
+            fill="#7c3aed" stroke="#2b1b47" stroke-width="2.5" stroke-linejoin="round"/>
+      <circle cx="79" cy="79" r="13" fill="#35bdf5" stroke="#2b1b47" stroke-width="2.5"/>
+      <circle cx="74.5" cy="76" r="2" fill="#2b1b47"/>
+      <circle cx="83.5" cy="76" r="2" fill="#2b1b47"/>
+      <path d="M73.5 84 Q79 89 84.5 84" fill="none" stroke="#2b1b47" stroke-width="2.5" stroke-linecap="round"/>
+    </symbol>
+
+    <!-- Rainbow spring (slinky): nested arcs, each outlined by the wider dark
+         arc sitting directly behind it. -->
+    <symbol id="toy-rainbow" viewBox="0 0 120 120">
+      <g fill="none" stroke-linecap="round">
+        <g stroke="#2b1b47" stroke-width="15">
+          <path d="M14 94 A46 46 0 0 1 106 94"/>
+          <path d="M25 94 A35 35 0 0 1 95 94"/>
+          <path d="M36 94 A24 24 0 0 1 84 94"/>
+          <path d="M47 94 A13 13 0 0 1 73 94"/>
+        </g>
+        <g stroke-width="10">
+          <path d="M14 94 A46 46 0 0 1 106 94" stroke="#ff3d8b"/>
+          <path d="M25 94 A35 35 0 0 1 95 94" stroke="#ffc32b"/>
+          <path d="M36 94 A24 24 0 0 1 84 94" stroke="#96dc2a"/>
+          <path d="M47 94 A13 13 0 0 1 73 94" stroke="#35bdf5"/>
+        </g>
+      </g>
+    </symbol>
+
+    <!-- Calendar — "pick your plan". -->
+    <symbol id="toy-calendar" viewBox="0 0 120 120">
+      <rect x="16" y="26" width="88" height="80" rx="14" fill="#ffffff" stroke="#2b1b47" stroke-width="4"/>
+      <path d="M16 46 H104" stroke="#2b1b47" stroke-width="4"/>
+      <path d="M16 40 A14 14 0 0 1 30 26 H90 A14 14 0 0 1 104 40 V46 H16 Z" fill="#35bdf5" stroke="#2b1b47" stroke-width="4"/>
+      <g stroke="#2b1b47" stroke-width="5" stroke-linecap="round">
+        <path d="M38 14 V30"/><path d="M82 14 V30"/>
+      </g>
+      <g fill="#e6dcf5">
+        <rect x="28" y="58" width="16" height="14" rx="4"/>
+        <rect x="52" y="58" width="16" height="14" rx="4"/>
+        <rect x="28" y="80" width="16" height="14" rx="4"/>
+        <rect x="76" y="80" width="16" height="14" rx="4"/>
+      </g>
+      <rect x="72" y="54" width="24" height="22" rx="7" fill="#ff3d8b" stroke="#2b1b47" stroke-width="3.5"/>
+      <path d="M77 65 L82 70 L91 60" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="48" y="80" width="16" height="14" rx="4" fill="#96dc2a"/>
+    </symbol>
+
+    <!-- Sealed parcel — "we pack the drop". -->
+    <symbol id="toy-parcel" viewBox="0 0 120 120">
+      <path d="M18 44 L60 30 L102 44 L60 58 Z" fill="#ffb3d1" stroke="#2b1b47" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M18 44 L60 58 L60 102 L18 88 Z" fill="#e0176e" stroke="#2b1b47" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M102 44 L60 58 L60 102 L102 88 Z" fill="#ff6ba6" stroke="#2b1b47" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M42 38 L42 82 L60 88 L60 44 Z" fill="#ffc32b" opacity=".95"/>
+      <path d="M78 38 L78 82 L60 88 L60 44 Z" fill="#ffd75e" opacity=".95"/>
+      <path d="M42 38 L60 44 L78 38" fill="none" stroke="#2b1b47" stroke-width="3"/>
+      <path d="M42 38 L42 82 M78 38 L78 82" stroke="#2b1b47" stroke-width="3"/>
+      <path d="M60 44 L60 88" stroke="#2b1b47" stroke-width="3" opacity=".35"/>
+      <path d="M60 20 Q61.6 27.2 68.8 28.8 Q61.6 30.4 60 37.6 Q58.4 30.4 51.2 28.8 Q58.4 27.2 60 20 Z"
+            fill="#96dc2a" stroke="#2b1b47" stroke-width="2.5" stroke-linejoin="round"/>
+    </symbol>
+
+    <!-- Founder portrait stand-in: friendly shopkeeper. -->
+    <symbol id="toy-avatar" viewBox="0 0 120 120">
+      <circle cx="60" cy="60" r="52" fill="#ffe3ef"/>
+      <path d="M22 108 C22 86 38 74 60 74 C82 74 98 86 98 108 Z" fill="#35bdf5" stroke="#2b1b47" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M48 68 H72 V84 H48 Z" fill="#ffd4bd"/>
+      <circle cx="60" cy="50" r="24" fill="#ffd4bd" stroke="#2b1b47" stroke-width="4"/>
+      <path d="M34 46 C34 28 46 20 60 20 C74 20 86 28 86 46 C86 40 74 36 60 36 C46 36 34 40 34 46 Z"
+            fill="#7c3aed" stroke="#2b1b47" stroke-width="4" stroke-linejoin="round"/>
+      <circle cx="50" cy="52" r="3.5" fill="#2b1b47"/>
+      <circle cx="70" cy="52" r="3.5" fill="#2b1b47"/>
+      <ellipse cx="42" cy="60" rx="5" ry="3.5" fill="#ff8ab5" opacity=".8"/>
+      <ellipse cx="78" cy="60" rx="5" ry="3.5" fill="#ff8ab5" opacity=".8"/>
+      <path d="M52 62 Q60 70 68 62" fill="none" stroke="#2b1b47" stroke-width="3.5" stroke-linecap="round"/>
+      <circle cx="60" cy="52" r="52" fill="none" stroke="#2b1b47" stroke-width="0"/>
+    </symbol>
+
+  </defs>
+</svg>
+
+<!-- ======================================================= 1. Promo bar -->
+<div class="promo" id="promo" hidden>
+  <span>Launch offer — <code>FIRSTDROP15</code> takes 15% off your first box.</span>
+  <button class="promo__close" type="button" id="promo-close" aria-label="Dismiss announcement">&times;</button>
+</div>
+
+<!-- ================================================== 2. Header / nav -->
+<header class="site-header" id="site-header">
+  <div class="wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="#top">
+        <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><use href="#mark" width="40" height="40"/></svg>
+        <span class="brand__name">Trendy Toys<span>Mystery Box</span></span>
+      </a>
+
+      <button class="nav__toggle" id="nav-toggle" type="button"
+              aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#peek">The Toys</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#inside">What's Inside</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li>
+          <a class="btn btn--primary btn--sm" href="#pricing">Get the Box</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================================================ 3. Hero -->
+  <section class="hero confetti" id="top" aria-labelledby="hero-title">
+    <div class="wrap hero__inner">
+      <div>
+        <span class="eyebrow">New — first mystery drop shipping soon</span>
+        <h1 id="hero-title">A box of fidgets. <em>Nobody knows</em> what's inside.</h1>
+        <p class="hero__lede">
+          Every month we hand-pack a mystery mix of fidget and sensory toys and mail it
+          out to you. You'll know the kinds of goodies you're getting — the exact mix
+          is always a surprise. No two boxes are the same.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn btn--primary btn--lg" href="#pricing">Get the Box</a>
+          <a class="btn btn--secondary btn--lg" href="#peek">See the toys</a>
+        </div>
+
+        <ul class="badge-row">
+          <li>Ships to the US &amp; Canada</li>
+          <li>Packed by hand at a small independent shop</li>
+          <li>3-month minimum, better pricing the longer you commit</li>
+        </ul>
+      </div>
+
+      <!-- Hero artwork: the box, mid-unbox. The toys are <use> references to
+           the same illustrations the rest of the page uses. -->
+      <div class="hero__art" aria-hidden="true">
+        <svg viewBox="0 0 360 310" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="180" cy="126" r="104" fill="#fff2cf" opacity=".55"/>
+
+          <!-- Confetti, back layer -->
+          <g>
+            <circle cx="30" cy="96" r="6" fill="#ff3d8b"/>
+            <circle cx="334" cy="116" r="6" fill="#96dc2a"/>
+            <circle cx="66" cy="272" r="5" fill="#ffc32b"/>
+            <circle cx="312" cy="268" r="6" fill="#35bdf5"/>
+            <circle cx="152" cy="28" r="5" fill="#96dc2a"/>
+            <rect x="316" y="40" width="10" height="10" rx="3" fill="#ffc32b" transform="rotate(22 321 45)"/>
+            <rect x="50" y="138" width="10" height="10" rx="3" fill="#35bdf5" transform="rotate(-18 55 143)"/>
+            <rect x="18" y="214" width="10" height="10" rx="3" fill="#7c3aed" transform="rotate(34 23 219)"/>
+            <rect x="336" y="204" width="10" height="10" rx="3" fill="#ff3d8b" transform="rotate(-26 341 209)"/>
+            <rect x="238" y="22" width="10" height="10" rx="3" fill="#ff6ba6" transform="rotate(14 243 27)"/>
+          </g>
+
+          <!-- Sparkles -->
+          <g stroke="#2b1b47" stroke-width="2.5" stroke-linejoin="round">
+            <path d="M60 42 Q62.9 55.1 76 58 Q62.9 60.9 60 74 Q57.1 60.9 44 58 Q57.1 55.1 60 42 Z" fill="#ffc32b"/>
+            <path d="M302 61 Q304.3 71.7 315 74 Q304.3 76.3 302 87 Q299.7 76.3 289 74 Q299.7 71.7 302 61 Z" fill="#35bdf5"/>
+            <path d="M42 185 Q44 194 53 196 Q44 198 42 207 Q40 198 31 196 Q40 194 42 185 Z" fill="#ff3d8b"/>
+            <path d="M318 153 Q320.7 165.3 333 168 Q320.7 170.7 318 183 Q315.3 170.7 303 168 Q315.3 165.3 318 153 Z" fill="#96dc2a"/>
+            <path d="M180 8 Q182.2 17.8 192 20 Q182.2 22.2 180 32 Q177.8 22.2 168 20 Q177.8 17.8 180 8 Z" fill="#ffd75e"/>
+          </g>
+
+          <!-- Box: back flaps, then the dark opening, then the toys coming out,
+               then the two front faces over the top. -->
+          <g stroke="#2b1b47" stroke-width="5" stroke-linejoin="round">
+            <path d="M88 180 L180 152 L172 108 L80 136 Z" fill="#ff8ab5"/>
+            <path d="M272 180 L180 152 L188 108 L280 136 Z" fill="#ff8ab5"/>
+            <path d="M88 180 L272 180 L180 208 Z" fill="#7a0c3a"/>
+          </g>
+
+          <use href="#toy-squishy" x="112" y="110" width="62" height="62"/>
+          <use href="#toy-spinner" x="104" y="54" width="76" height="76"/>
+          <use href="#toy-popit" x="176" y="40" width="70" height="70"/>
+          <use href="#toy-cube" x="238" y="92" width="64" height="64"/>
+
+          <g stroke="#2b1b47" stroke-width="5" stroke-linejoin="round">
+            <path d="M88 180 L180 208 L180 292 L88 264 Z" fill="#e0176e"/>
+            <path d="M272 180 L180 208 L180 292 L272 264 Z" fill="#ff6ba6"/>
+          </g>
+          <g stroke="#2b1b47" stroke-width="3.5" stroke-linejoin="round">
+            <path d="M148 198.3 L180 208 L180 292 L148 282.3 Z" fill="#ffc32b"/>
+            <path d="M180 208 L212 198.3 L212 282.3 L180 292 Z" fill="#ffd75e"/>
+          </g>
+          <path d="M240 214 Q242.5 224.5 253 227 Q242.5 229.5 240 240 Q237.5 229.5 227 227 Q237.5 224.5 240 214 Z"
+                fill="#fff" stroke="#2b1b47" stroke-width="3" stroke-linejoin="round" opacity=".92"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================= 4. Peek / carousel -->
+  <section class="section section--alt reveal" id="peek" aria-labelledby="peek-title">
+    <div class="wrap">
+      <div class="section-head section-head--center" style="--u-color: var(--c-primary-bright);">
+        <span class="eyebrow">The toy shelf</span>
+        <h2 id="peek-title">What could be in your box?</h2>
+        <p>These are the kinds of fidgets we pack. Think of it as the shelf we shop from —
+          which ones land in <em>your</em> box is the part we're not telling you.</p>
+      </div>
+
+      <div class="carousel" id="carousel">
+        <ul class="carousel__track" id="carousel-track" tabindex="0"
+            aria-label="Examples of toys that could be in a box, scrollable">
+          <li class="carousel__item">
+            <div class="toy toy--wide tile-pink" aria-hidden="true">
+              <svg viewBox="0 0 120 120"><use href="#toy-popit" width="120" height="120"/></svg>
+            </div>
+            <div class="carousel__caption">
+              <h3>Pop-it pads</h3>
+              <p>Silicone push-pop fidgets. Press every bubble, flip it over, do it again.</p>
+            </div>
+          </li>
+
+          <li class="carousel__item">
+            <div class="toy toy--wide tile-sky" aria-hidden="true">
+              <svg viewBox="0 0 120 120"><use href="#toy-spinner" width="120" height="120"/></svg>
+            </div>
+            <div class="carousel__caption">
+              <h3>Fidget spinners</h3>
+              <p>Weighted bearings that actually keep spinning instead of stopping in a second.</p>
+            </div>
+          </li>
+
+          <li class="carousel__item">
+            <div class="toy toy--wide tile-violet" aria-hidden="true">
+              <svg viewBox="0 0 120 120"><use href="#toy-cube" width="120" height="120"/></svg>
+            </div>
+            <div class="carousel__caption">
+              <h3>Infinity cubes</h3>
+              <p>Fold it, flip it, fold it again. The one that never quite ends.</p>
+            </div>
+          </li>
+
+          <li class="carousel__item">
+            <div class="toy toy--wide tile-pink" aria-hidden="true">
+              <svg viewBox="0 0 120 120"><use href="#toy-squishy" width="120" height="120"/></svg>
+            </div>
+            <div class="carousel__caption">
+              <h3>Squishy friends</h3>
+              <p>Slow-rise squishies that squash flat and puff back up again.</p>
+            </div>
+          </li>
+
+          <li class="carousel__item">
+            <div class="toy toy--wide tile-tang" aria-hidden="true">
+              <svg viewBox="0 0 120 120"><use href="#toy-stretchy" width="120" height="120"/></svg>
+            </div>
+            <div class="carousel__caption">
+              <h3>Stretchy strings</h3>
+              <p>Pull, twist, knot, snap back. Stretches way further than it looks like it should.</p>
+            </div>
+          </li>
+
+          <li class="carousel__item">
+            <div class="toy toy--wide tile-sky" aria-hidden="true">
+              <svg viewBox="0 0 120 120"><use href="#toy-poptube" width="120" height="120"/></svg>
+            </div>
+            <div class="carousel__caption">
+              <h3>Pop tubes</h3>
+              <p>Stretch them out for the pop, click them together, build something silly.</p>
+            </div>
+          </li>
+
+          <li class="carousel__item">
+            <div class="toy toy--wide tile-lime" aria-hidden="true">
+              <svg viewBox="0 0 120 120"><use href="#toy-slime" width="120" height="120"/></svg>
+            </div>
+            <div class="carousel__caption">
+              <h3>Slime &amp; putty</h3>
+              <p>Stretchy, squishy, occasionally glittery. Sealed tub, we promise.</p>
+            </div>
+          </li>
+
+          <li class="carousel__item">
+            <div class="toy toy--wide tile-sun" aria-hidden="true">
+              <svg viewBox="0 0 120 120"><use href="#toy-rainbow" width="120" height="120"/></svg>
+            </div>
+            <div class="carousel__caption">
+              <h3>Rainbow springs</h3>
+              <p>Walk it down a stack of books. Yes, it still works. Yes, we tested it.</p>
+            </div>
+          </li>
+
+          <li class="carousel__item">
+            <div class="toy toy--wide tile-violet" aria-hidden="true">
+              <svg viewBox="0 0 120 120"><use href="#toy-stickers" width="120" height="120"/></svg>
+            </div>
+            <div class="carousel__caption">
+              <h3>Sticker sheets</h3>
+              <p>A fresh sheet in every box, plus one bonus item we don't announce.</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="carousel__controls">
+          <button class="carousel__btn" type="button" id="carousel-prev" aria-label="Previous items">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M15 18l-6-6 6-6"/>
+            </svg>
+          </button>
+          <div class="carousel__dots" id="carousel-dots" role="tablist" aria-label="Choose slide"></div>
+          <button class="carousel__btn" type="button" id="carousel-next" aria-label="Next items">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 6l6 6-6 6"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <p class="toybox__note">
+        Illustrated here, packed for real — the exact toys change every single month.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================================================== 5. How it works -->
+  <section class="section reveal" id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="section-head section-head--center" style="--u-color: var(--c-sky-bright);">
+        <span class="eyebrow">How it works</span>
+        <h2 id="how-title">Three steps, then it's out of your hands</h2>
+      </div>
+
+      <ol class="grid steps">
+        <li class="step">
+          <span class="step__num" aria-hidden="true">1</span>
+          <div class="toy tile-sky" aria-hidden="true">
+            <svg viewBox="0 0 120 120"><use href="#toy-calendar" width="120" height="120"/></svg>
+          </div>
+          <h3>Pick your plan</h3>
+          <p>3 months, 6 months, or a year — the longer the term, the lower the price per
+             box. Takes about a minute to sign up.</p>
+        </li>
+
+        <li class="step">
+          <span class="step__num" aria-hidden="true">2</span>
+          <div class="toy tile-pink" aria-hidden="true">
+            <svg viewBox="0 0 120 120"><use href="#toy-parcel" width="120" height="120"/></svg>
+          </div>
+          <h3>We curate the drop</h3>
+          <p>We pick a fresh mix of fidgets and sensory toys each month and pack the boxes
+             by hand.</p>
+        </li>
+
+        <li class="step">
+          <span class="step__num" aria-hidden="true">3</span>
+          <div class="toy tile-lime" aria-hidden="true">
+            <svg viewBox="0 0 120 120"><use href="#toy-rainbow" width="120" height="120"/></svg>
+          </div>
+          <h3>Unbox the surprise</h3>
+          <p>It lands in your mailbox. You open it. Nobody knows what's inside until you do.</p>
+        </li>
+      </ol>
+
+      <div class="cta-row cta-row--center" style="margin-top: 3rem;">
+        <a class="btn btn--primary btn--lg" href="#pricing">Start my subscription</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================== 6. What's inside -->
+  <section class="section section--tint reveal" id="inside" aria-labelledby="inside-title">
+    <div class="wrap">
+      <div class="section-head section-head--center" style="--u-color: var(--c-violet-bright);">
+        <span class="eyebrow">What's inside</span>
+        <h2 id="inside-title">Every box, four kinds of fidget</h2>
+        <p>The categories stay consistent. The specific toys change every single month.</p>
+      </div>
+
+      <!-- TODO: once the first box is packed, replace these descriptions with the real
+           item names and counts. -->
+      <div class="grid features">
+        <article class="feature">
+          <div class="toy toy--wide tile-pink" aria-hidden="true">
+            <svg viewBox="0 0 120 120"><use href="#toy-popit" width="120" height="120"/></svg>
+          </div>
+          <div class="feature__body">
+            <h3>Tactile fidgets</h3>
+            <p>Push-pops, textured strips, and things built to be pressed. The stuff that
+               keeps hands busy without making a sound.</p>
+          </div>
+        </article>
+
+        <article class="feature">
+          <div class="toy toy--wide tile-sun" aria-hidden="true">
+            <svg viewBox="0 0 120 120"><use href="#toy-spinner" width="120" height="120"/></svg>
+          </div>
+          <div class="feature__body">
+            <h3>Spinners &amp; desk toys</h3>
+            <p>Spinners, clickers, sliders, and flip cubes — small enough for a pocket,
+               satisfying enough to keep on the desk.</p>
+          </div>
+        </article>
+
+        <article class="feature">
+          <div class="toy toy--wide tile-lime" aria-hidden="true">
+            <svg viewBox="0 0 120 120"><use href="#toy-squishy" width="120" height="120"/></svg>
+          </div>
+          <div class="feature__body">
+            <h3>Squishy &amp; stress toys</h3>
+            <p>Slow-rise squishies and squeeze toys. The ones that end up permanently
+               living on someone's nightstand.</p>
+          </div>
+        </article>
+
+        <article class="feature">
+          <div class="toy toy--wide tile-violet" aria-hidden="true">
+            <svg viewBox="0 0 120 120"><use href="#toy-stickers" width="120" height="120"/></svg>
+          </div>
+          <div class="feature__body">
+            <h3>Sensory extras</h3>
+            <p>Stickers, a card telling you what's in the box, and one small bonus item
+               we don't announce ahead of time.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================== 7. Founder -->
+  <!-- TODO: replace this entire block with your real bio and photo.
+       Keep it factual — do not add therapy, OT, or clinical credentials unless you
+       actually hold them. -->
+  <section class="section reveal" id="about" aria-labelledby="about-title">
+    <div class="wrap founder__inner">
+      <div class="toy founder__portrait tile-sun" data-replace="founder photo, 1:1" aria-hidden="true">
+        <svg viewBox="0 0 120 120"><use href="#toy-avatar" width="120" height="120"/></svg>
+      </div>
+
+      <div>
+        <span class="eyebrow">Hello from the shop</span>
+        <h2 id="about-title">Welcome to Trendy Toys</h2>
+        <p>
+          I've been selling fidget and sensory toys out of a small independent shop,
+          packing every order by hand. The question I get most often is some version of
+          "just pick something good for me" — so I made a box that does exactly that.
+        </p>
+        <p>
+          Each month I put together a mix of the toys I'd actually hand someone across a
+          table: things that feel good, hold up to being used constantly, and are worth
+          more together than the price on the box.
+        </p>
+        <p>
+          This is the first drop, so you're getting in at the very beginning. If something
+          isn't right, email me — it's a small shop, and that email goes to me.
+        </p>
+        <p class="founder__sig">
+          — [Your name]
+          <span>Founder, Trendy Toys</span>
+        </p>
+        <div class="cta-row" style="margin-top: 1.5rem;">
+          <a class="btn btn--primary" href="#pricing">Get started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= 8. Pricing -->
+  <section class="section section--alt reveal" id="pricing" aria-labelledby="pricing-title">
+    <div class="wrap">
+      <div class="section-head section-head--center" style="--u-color: var(--c-lime-bright);">
+        <span class="eyebrow">Pricing</span>
+        <h2 id="pricing-title">Pick a plan</h2>
+        <p>All prices in USD, with shipping to the US and Canada included. Every plan is one upfront
+           payment for the whole term — then a box just shows up each month. The longer
+           the term, the less each box costs and the more we pack into it.</p>
+      </div>
+
+      <!-- TODO: set real prices before launch, and make sure they match your Stripe
+           Payment Links exactly. -->
+      <div class="grid pricing">
+        <article class="plan">
+          <h3>3 Months</h3>
+          <p class="plan__price">
+            <span class="plan__amount">$39</span>
+            <span class="plan__per">/ month</span>
+          </p>
+          <p class="plan__billed">One payment of $117 covers all 3 boxes.</p>
+          <ul class="plan__list">
+            <li>3 mystery boxes, one per month</li>
+            <li>Shipping included, US &amp; Canada</li>
+          </ul>
+          <a class="btn btn--secondary btn--block" data-stripe="quarterly"
+             href="#pricing">Choose 3 months</a>
+        </article>
+
+        <article class="plan">
+          <span class="plan__badge">Most popular</span>
+          <h3>6 Months</h3>
+          <p class="plan__price">
+            <span class="plan__amount">$37</span>
+            <span class="plan__per">/ month</span>
+          </p>
+          <p class="plan__billed">One payment of $222 covers all 6 boxes.</p>
+          <p class="plan__savings">+6 bonus toys over your term</p>
+          <ul class="plan__list">
+            <li>Everything in the 3-month plan</li>
+            <li>+1 extra bonus toy in every box</li>
+            <li>"Suggest a Toy" — tell us what to pack next</li>
+          </ul>
+          <a class="btn btn--secondary btn--block" data-stripe="semiannual"
+             href="#pricing">Choose 6 months</a>
+        </article>
+
+        <article class="plan is-featured">
+          <span class="plan__badge">Best value</span>
+          <h3>12 Months</h3>
+          <p class="plan__price">
+            <span class="plan__amount">$33</span>
+            <span class="plan__per">/ month</span>
+          </p>
+          <p class="plan__billed">One payment of $396 covers all 12 boxes.</p>
+          <p class="plan__savings">Save $72 — almost 2 boxes free</p>
+          <ul class="plan__list">
+            <li>Everything in the 6-month plan</li>
+            <li>+2 extra bonus toys in every box — 24 over the year</li>
+            <li>Priority picks on "Suggest a Toy" + price locked for the full year</li>
+          </ul>
+          <a class="btn btn--primary btn--block" data-stripe="annual"
+             href="#pricing">Choose 12 months</a>
+        </article>
+      </div>
+
+      <p class="pricing-note">Pay once, then it's done — no monthly charges to watch for.
+         Auto-renew is easy to turn off and your plan simply ends at the end of its term.</p>
+    </div>
+  </section>
+
+  <!--
+    ================================================ Press & testimonials
+
+    These two blocks are built and styled but intentionally NOT live. Turn them on
+    only when you have genuine material to put in them:
+
+      * "As seen in" needs real press placements you can link to.
+      * Testimonials need real quotes from real customers — attribute them honestly,
+        e.g. "Verified customer, March 2026".
+
+    Publishing invented press logos or made-up testimonials is deceptive advertising
+    and, in Canada, can fall foul of the Competition Act. Delete these blocks if you
+    don't plan to use them.
+
+  <section class="section section--tint" aria-labelledby="press-title">
+    <div class="wrap">
+      <div class="section-head section-head--center">
+        <h2 id="press-title">As seen in</h2>
+      </div>
+      <ul class="logo-strip">
+        <li>Publication one</li>
+        <li>Publication two</li>
+        <li>Publication three</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="quotes-title">
+    <div class="wrap">
+      <div class="section-head section-head--center">
+        <h2 id="quotes-title">What buyers say</h2>
+      </div>
+      <div class="grid quotes">
+        <figure class="quote">
+          <blockquote>Real customer quote goes here.</blockquote>
+          <figcaption>Real name — Verified customer, Month Year</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <!-- ============================================================= 10. FAQ -->
+  <section class="section reveal" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="section-head section-head--center" style="--u-color: var(--c-sun);">
+        <span class="eyebrow">FAQ</span>
+        <h2 id="faq-title">Questions, answered</h2>
+      </div>
+
+      <div class="faq" id="faq-list">
+        <details>
+          <summary>Where do you ship, and how long does it take?</summary>
+          <div class="faq__body">
+            <p>We ship to the US and Canada, and shipping is included in every plan. Boxes go out
+              in the first week of each month; most arrive within 3–8 business days
+              depending on where you're located. TODO: confirm your carrier and timelines.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Can I cancel?</summary>
+          <div class="faq__body">
+            <p>Every plan has a minimum term — 3, 6, or 12 months — so you're billed for
+              the full term you choose. Manage your subscription from the link in any
+              billing email; turn off auto-renew anytime and it simply won't renew at the
+              end of your current term. No phone call, no retention pitch.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>How does "Suggest a Toy" work?</summary>
+          <div class="faq__body">
+            <p>If you're on the 6-month or 12-month plan, you'll get a link in your billing
+              email to submit toy or fidget ideas you'd like to see in a future box. We
+              review submissions each month when planning the next drop — it's not a
+              guarantee any specific item shows up, but it directly shapes what we pack.
+              12-month subscribers get priority when we're picking from the list.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Who is the box for?</summary>
+          <div class="faq__body">
+            <p>Anyone who likes fidgets — kids, teens, students, and plenty of adults who
+              keep one on their desk. Boxes are packed with a general audience in mind
+              rather than tailored to a specific age or need.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Is it safe for young children?</summary>
+          <div class="faq__body">
+            <p>Some items contain small parts and are <strong>not suitable for children
+              under 3</strong>. Every box is labelled accordingly. If a box is going to a
+              young child, adult supervision is recommended. TODO: confirm this wording
+              against the labelling on the products you're sourcing.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>When am I billed?</summary>
+          <div class="faq__body">
+            <p>Once, up front: one payment covers every box in your term (3, 6, or 12),
+              and there's nothing more to pay until renewal — if you haven't turned off
+              auto-renew by then. Order before the end of a month to receive that month's
+              box; after that, your first box is the following month's.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================== 11. Newsletter -->
+  <section class="section reveal" id="newsletter" aria-labelledby="news-title">
+    <div class="wrap">
+      <div class="newsletter confetti">
+        <span class="eyebrow">Stay in the loop</span>
+        <h2 id="news-title">Join the drop list</h2>
+        <p>One email a month: what's in the next box, when it ships, and the occasional
+          discount code. No spam, unsubscribe in one click.</p>
+
+        <!-- TODO: point action= at your email provider's form endpoint (Mailchimp,
+             Buttondown, Kit, etc.). Until then nothing is actually submitted. -->
+        <form class="newsletter__form" id="newsletter-form" action="#" method="post" novalidate>
+          <label class="visually-hidden" for="news-email">Email address</label>
+          <input type="email" id="news-email" name="email" required
+                 autocomplete="email" placeholder="you@example.com">
+          <button class="btn btn--primary" type="submit">Sign me up</button>
+        </form>
+        <p class="newsletter__msg" id="newsletter-msg" role="status" aria-live="polite"></p>
+        <p class="newsletter__fine">We'll only email you about Trendy Toys.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================== 12. Social -->
+  <section class="section section--tint reveal" id="social" aria-labelledby="social-title">
+    <div class="wrap">
+      <div class="section-head section-head--center" style="--u-color: var(--c-primary-bright);">
+        <h2 id="social-title">Find us on Instagram &amp; TikTok</h2>
+        <p>Unboxings, restocks, and a lot of close-up footage of things being squished.</p>
+      </div>
+
+      <!-- Stand-in tiles. TODO: drop a real embed here (e.g. a lightweight Instagram
+           feed widget) or replace with six recent post images. -->
+      <div class="grid social-grid" aria-hidden="true">
+        <div class="toy tile-pink"><svg viewBox="0 0 120 120"><use href="#toy-rainbow" width="120" height="120"/></svg></div>
+        <div class="toy tile-sky"><svg viewBox="0 0 120 120"><use href="#toy-poptube" width="120" height="120"/></svg></div>
+        <div class="toy tile-lime"><svg viewBox="0 0 120 120"><use href="#toy-slime" width="120" height="120"/></svg></div>
+        <div class="toy tile-sun"><svg viewBox="0 0 120 120"><use href="#toy-spinner" width="120" height="120"/></svg></div>
+        <div class="toy tile-violet"><svg viewBox="0 0 120 120"><use href="#toy-squishy" width="120" height="120"/></svg></div>
+        <div class="toy tile-tang"><svg viewBox="0 0 120 120"><use href="#toy-stretchy" width="120" height="120"/></svg></div>
+      </div>
+
+      <div class="cta-row cta-row--center" style="margin-top: 2.5rem;">
+        <!-- TODO: replace with your real profile URLs. -->
+        <a class="btn btn--ghost" href="#" rel="noopener">Instagram</a>
+        <a class="btn btn--ghost" href="#" rel="noopener">TikTok</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- =========================================================== 13. Footer -->
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="footer__cols">
+      <div class="footer__brand">
+        <a class="brand" href="#top">
+          <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><use href="#mark" width="40" height="40"/></svg>
+          <span class="brand__name">Trendy Toys<span>Mystery Box</span></span>
+        </a>
+        <p>Fidget and sensory toys, hand-packed and shipped to the US and Canada.</p>
+        <!-- TODO: add your business address if you want one shown. -->
+        <ul class="footer__social">
+          <li><a href="#" aria-label="Instagram" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg></a></li>
+          <li><a href="#" aria-label="TikTok" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linejoin="round" aria-hidden="true">
+              <path d="M14 3v11.5a3.5 3.5 0 11-3.5-3.5"/><path d="M14 6a5 5 0 005 5"/>
+            </svg></a></li>
+          <li><a href="#" aria-label="Facebook" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M15 3h-2.5A3.5 3.5 0 009 6.5V9H7v3h2v9h3v-9h2.5l.5-3H12V7a1 1 0 011-1h2z"/>
+            </svg></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="#pricing">Get started</a></li>
+          <li><a href="#peek">The toys</a></li>
+          <li><a href="#inside">What's inside</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Support</h3>
+        <!-- TODO: these need real pages before launch. -->
+        <ul>
+          <li><a href="mailto:hello@trendytoys.ca">hello@trendytoys.ca</a></li>
+          <li><a href="#">Shipping &amp; returns</a></li>
+          <li><a href="#">Terms &amp; conditions</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span id="year">2026</span> Trendy Toys. All rights reserved.</p>
+      <ul class="footer__pay" aria-label="Payment methods accepted">
+        <li>Visa</li><li>Mastercard</li><li>Amex</li><li>Apple Pay</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<a class="btn btn--primary floating-cta" id="floating-cta" href="#pricing">Get the Box</a>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
