@@ -74,9 +74,6 @@ var STRIPE_LINKS = {
 ```
 
 Every button carrying `data-stripe="<key>"` picks up the matching URL on load.
-Any key left blank falls back to the Etsy shop, so no button ever dead-ends —
-including with JavaScript disabled, since the fallback is also hardcoded in each
-`href` in the HTML.
 
 Set the Payment Links to **recurring** prices for the three subscription plans
 and a **one-time** price for the gift option, and make the amounts match the
@@ -86,10 +83,8 @@ prices printed on the pricing cards.
 
 **Blocking — the site shouldn't go live without these**
 
-- [ ] **Repoint the domain.** `trendytoys.ca` currently 302-redirects to Etsy.
-      That redirect has to be replaced with this site at your DNS/host, otherwise
-      nobody will ever see this page. (Consider keeping `/shop` or similar
-      pointing at Etsy.)
+- [ ] **Repoint the domain.** Replace the current `trendytoys.ca` redirect with
+      this site at your DNS/host, otherwise nobody will ever see this page.
 - [ ] Create the four Stripe Payment Links and fill in `STRIPE_LINKS`.
 - [ ] Set real prices in the pricing cards (`index.html`, `#pricing`) and in the
       `Product` JSON-LD in `<head>`.
@@ -125,8 +120,8 @@ prices printed on the pricing cards.
 
 The "As seen in" press strip and the testimonials block are built and styled but
 shipped commented out in `index.html`. Enable them **only** with genuine material —
-real press placements you can link to, and real customer quotes (your Etsy reviews
-are a good source, attributed honestly). Publishing invented press logos or
+real press placements you can link to, and real customer quotes, attributed
+honestly. Publishing invented press logos or
 fabricated testimonials is deceptive advertising and, in Canada, can run afoul of
 the Competition Act. Delete the blocks if you don't intend to use them.
 
