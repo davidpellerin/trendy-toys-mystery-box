@@ -1221,15 +1221,6 @@ strong { font-weight: 800; }
   font-size: var(--fs-sm);
   color: #c3b6e0;
 }
-.footer__pay { display: flex; flex-wrap: wrap; gap: var(--space-2); }
-.footer__pay li {
-  padding: 0.1rem var(--space-3);
-  border: 2px solid rgba(255, 255, 255, 0.28);
-  border-radius: var(--radius-pill);
-  font-size: var(--fs-xs);
-  font-weight: 700;
-}
-
 /* --------------------------------------------------------------------------
    18. Floating mobile CTA
    -------------------------------------------------------------------------- */
