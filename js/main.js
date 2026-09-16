@@ -61,29 +61,6 @@
   }
 
   /* ------------------------------------------------------------------------
-     Promo bar — hidden by default in the HTML so it can't flash before we
-     check whether it was already dismissed.
-     ---------------------------------------------------------------------- */
-
-  var PROMO_KEY = 'ttc:promo-dismissed';
-
-  function initPromoBar() {
-    var bar = $('#promo');
-    var close = $('#promo-close');
-    if (!bar || !close) return;
-
-    var dismissed = false;
-    try { dismissed = localStorage.getItem(PROMO_KEY) === '1'; } catch (e) { /* private mode */ }
-
-    if (!dismissed) bar.hidden = false;
-
-    close.addEventListener('click', function () {
-      bar.hidden = true;
-      try { localStorage.setItem(PROMO_KEY, '1'); } catch (e) { /* ignore */ }
-    });
-  }
-
-  /* ------------------------------------------------------------------------
      Sticky header shadow
      ---------------------------------------------------------------------- */
 
@@ -368,7 +345,6 @@
 
   [
     initStripeLinks,
-    initPromoBar,
     initStickyNav,
     initMobileMenu,
     initCarousel,
