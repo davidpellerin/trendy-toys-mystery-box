@@ -873,16 +873,8 @@
         <p>Unboxings, restocks, and a lot of close-up footage of things being squished.</p>
       </div>
 
-      <!-- Stand-in tiles. TODO: drop a real embed here (e.g. a lightweight Instagram
-           feed widget) or replace with six recent post images. -->
-      <div class="grid social-grid" aria-hidden="true">
-        <div class="toy tile-pink"><svg viewBox="0 0 120 120"><use href="#toy-rainbow" width="120" height="120"/></svg></div>
-        <div class="toy tile-sky"><svg viewBox="0 0 120 120"><use href="#toy-poptube" width="120" height="120"/></svg></div>
-        <div class="toy tile-lime"><svg viewBox="0 0 120 120"><use href="#toy-slime" width="120" height="120"/></svg></div>
-        <div class="toy tile-sun"><svg viewBox="0 0 120 120"><use href="#toy-spinner" width="120" height="120"/></svg></div>
-        <div class="toy tile-violet"><svg viewBox="0 0 120 120"><use href="#toy-squishy" width="120" height="120"/></svg></div>
-        <div class="toy tile-tang"><svg viewBox="0 0 120 120"><use href="#toy-stretchy" width="120" height="120"/></svg></div>
-      </div>
+      <!-- Curator.io Instagram gallery feed -->
+      <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
 
       <div class="cta-row cta-row--center" style="margin-top: 2.5rem;">
         <!-- TODO: replace with your real profile URLs. -->
@@ -967,5 +959,14 @@
 <a class="btn btn--primary floating-cta" id="floating-cta" href="#pricing">Get the Box</a>
 
 <script src="js/main.js" defer></script>
+
+<!-- curator-feed-default-feed-layout -->
+<script type="text/javascript">
+(function(){
+var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+i.src="https://cdn.curator.io/published/33040e34-4437-4b0d-87e9-b0a641f4cc40.js";
+e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+})();
+</script>
 </body>
 </html>
