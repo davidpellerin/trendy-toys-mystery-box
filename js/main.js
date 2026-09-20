@@ -330,6 +330,40 @@
   }
 
   /* ------------------------------------------------------------------------
+     Brand links — the logo points at "/" so the URL stays clean, but a click
+     from this same page should scroll rather than reload. With JS off the
+     plain navigation still lands you at the top.
+     ---------------------------------------------------------------------- */
+
+  function initBrandLinks() {
+    var brands = $$('a.brand');
+    if (!brands.length) return;
+
+    var toggle = $('#nav-toggle');
+
+    brands.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        // Leave new-tab / middle-click / modified clicks to the browser.
+        if (e.defaultPrevented || e.button !== 0 ||
+            e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+
+        e.preventDefault();
+
+        // The header logo stays tappable while the mobile menu is open, and
+        // without a reload nothing else would close it.
+        if (toggle && toggle.getAttribute('aria-expanded') === 'true') toggle.click();
+
+        window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+
+        // Clear any "#section" left in the address bar, without a history entry.
+        if (window.history.replaceState) {
+          window.history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
+      });
+    });
+  }
+
+  /* ------------------------------------------------------------------------
      Footer year
      ---------------------------------------------------------------------- */
 
@@ -352,6 +386,7 @@
     initNewsletterForm,
     initScrollReveal,
     initFloatingCta,
+    initBrandLinks,
     initFooterYear
   ].forEach(function (fn) {
     try { fn(); } catch (err) {
