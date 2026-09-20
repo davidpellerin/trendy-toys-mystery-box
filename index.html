@@ -33,27 +33,31 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Trendy Toys",
-  "url": "https://www.trendytoys.ca/",
-  "email": "hello@trendytoys.ca",
-  "address": { "@type": "PostalAddress", "addressCountry": "CA" }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Trendy Toys Mystery Box",
-  "description": "A recurring mystery box of fidget and sensory toys, hand-packed by Trendy Toys. 3-month minimum commitment.",
-  "brand": { "@type": "Brand", "name": "Trendy Toys" },
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "USD",
-    "price": "39.00",
-    "availability": "https://schema.org/PreOrder",
-    "url": "https://www.trendytoys.ca/#pricing"
-  }
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.trendytoys.ca/#organization",
+      "name": "Trendy Toys",
+      "url": "https://www.trendytoys.ca/",
+      "email": "hello@trendytoys.ca",
+      "address": { "@type": "PostalAddress", "addressCountry": "CA" }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.trendytoys.ca/#product",
+      "name": "Trendy Toys Mystery Box",
+      "description": "A recurring mystery box of fidget and sensory toys, hand-packed by Trendy Toys. 3-month minimum commitment.",
+      "brand": { "@id": "https://www.trendytoys.ca/#organization" },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "39.00",
+        "availability": "https://schema.org/PreOrder",
+        "url": "https://www.trendytoys.ca/#pricing",
+        "seller": { "@id": "https://www.trendytoys.ca/#organization" }
+      }
+    }
+  ]
 }
 </script>
 </head>
